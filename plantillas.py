@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    nombre = request.args.get('name','ingrese un valor de n2')
+    nombre = request.args.get('name','ingrese un valor')
     return render_template('index.html',name=nombre)
     
     
